@@ -363,7 +363,7 @@ div.panel2.show{
 
 /*анимация фона баннера*/
 .snow1{
-   background-image: url("https://webtort.ru/wp-content/uploads/2019/12/snow1.png");
+   background-image: src("img/snow1.png");
    position:absolute;
    width: 600px;
     height:120px;
@@ -371,7 +371,7 @@ div.panel2.show{
 }
 
 .snow2{
-    background-image: url("https://webtort.ru/wp-content/uploads/2019/12/snow2.png"),url("https://webtort.ru/wp-content/uploads/2019/12/snow3.png");
+    background-image: url("img/snow2.png"),url("img/snow3.png");
     animation: snow2 10s linear infinite;
     width: 600px;
     height:120px;
