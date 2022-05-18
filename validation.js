@@ -18,55 +18,10 @@ form.addEventListener('submit', (e)=> {
 		this.submit();
 	}else{
 		event.preventDefault();
-  	//window.history.back();
 	}
 });
 
 
-
-function checkInputs() {
-	//var errori = document.getElementsByClassName("wi");
-	//const namevalue = name.value.trim();
-	//const familiavalue = familia.value.trim();
-	//const phonevalue = phone.value.trim();
-	//const emailvalue = email.value.trim();
-	//const passwordvalue = password.value.trim();
-	//const loginvalue = login.value.trim();
-	// for(var i=0;i<errori.length;i++){
-	// 	errori[i].style.display = "none";
-	// }
-	// if(namevalue == ''||namevalue.length<3||!checkName(namevalue)) {
-	// 	//alert("sd");
-	// 	errori[0].style.display = "inline-flex";
-	// 	error++;
-	// }
-
-
-	// if(familiavalue==''||familiavalue.length<3||!checkFamilia(familiavalue)) {
-	// 	errori[1].style.display = "inline-flex";
-	// 	error++;
-	// }
-
-	// if(phonevalue=='') {
-	// 	errori[2].style.display = "inline-flex";
-	// 	error++;
-	// }
-
-	// if(!checkEmail(emailvalue)) {
-	// 	errori[3].style.display = "inline-flex";
-	// 	error++;
-	// }
-
-	// if(passwordvalue==''||passwordvalue.length<8||!checkPassword(passwordvalue)){
-	// 	errori[4].style.display = "inline-flex";
-	// 	error++;
-	// }
-
-	// if(loginvalue==''||loginvalue.length<5||loginvalue.length>8) {
-	// 	errori[5].style.display = "inline-flex";
-	// 	error++;
-	// }
-}
 
 function emailValidation(email) {
 	let reEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -109,17 +64,9 @@ function addyears(){
 	var yearsspisok = document.getElementsByClassName("years");
 	var yearspisok = document.getElementsByClassName("year");
 	for(var i=0;i<yearspisok.length;i++) {
-		/*
-		var opt = document.createElement('option');
-		opt.value = "s"+v++;
-		opt.textContent = god++;
-		opt.innerHTML = i;
-		yearspisok.add(new Option(opt));
-		*/
 		yearspisok[i].textContent = god++;
 		yearspisok[i].value="s"+v++;
 	}
-	//yearspisok.appendChild('ky')
 }
 
 
