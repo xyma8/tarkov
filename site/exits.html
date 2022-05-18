@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Tarkov</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    
+    <body>
+        <div class="content">
+            <div class="navmenu">
+                <ul>
+                    <li><a href="index.html" >Главное</a></li>
+                    <li ><a class="active">Выходы</a></li>
+                    <li><a href="ptext.html">Об игре</a>
+                        <ul >
+                            <li><a href="ptext.html#a1">Основное</a></li>
+                            <li><a href="ptext.html#a2">Предыстория</a></li>
+                            <li><a href="ptext.html#a3">Действующие силы</a></li>
+                        </ul>
+                    </li>
+                    <li class="reg"><a href="reg.html">Регистрация</a></li>
+                </ul>
+            </div>
+
+            <div class="acco">
+                <button class="accordion" onclick="accor(0)">Выходы за ЧВК</button>
+                <div class="panel"><button class="mayakbutton" onclick="showGalleryCVK(0,7)">Маяк/ЧВК</button></div>
+                <div class="panel"><button onclick="showGalleryCVK(1,6)">Берег/ЧВК</button></div>
+                <div class="panel"><button onclick="showGalleryCVK(2,4)">Завод/ЧВК</button></div>
+                <div class="panel"><button onclick="showGalleryCVK(3,9)">Таможня/ЧВК</button></div>
+
+                <button class="accordion" onclick="accor(1)">Выходы за Дикого</button>
+                <div class="panel2"><button class="mayakbutton" onclick="showGalleryScav(0,6)">Маяк/Дикие</button></div>
+                <div class="panel2"><button onclick="showGalleryScav(1,8)">Берег/Дикие</button></div>
+                <div class="panel2"><button onclick="showGalleryScav(2,4)">Завод/Дикие</button></div>
+                <div class="panel2"><button onclick="showGalleryScav(3,18)">Таможня/Дикие</button></div>
+            </div>
+
+            
+        <div align="center" class="locationtext">Маяк/ЧВК</div>
+            
+        <div class="mayak">
+            <div class="slidecontainer">
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text1</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text2</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text3</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text4</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text5</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text6</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text7</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text8</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text9</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text10</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text3</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text4</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text5</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text6</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text7</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text8</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text17</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="" style = "width: 100%" alt="" class="imgEx">
+                    <div class="text" align="center">text18</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+            <br>
+            
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+                <span class="dot" onclick="currentSlide(14)"></span>
+                <span class="dot" onclick="currentSlide(15)"></span>
+                <span class="dot" onclick="currentSlide(16)"></span>
+                <span class="dot" onclick="currentSlide(17)"></span>
+                <span class="dot" onclick="currentSlide(18)"></span>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+    </body>
+    
+    <footer>
+        ©2022
+        <div class="icons">
+            <a href="https://vk.com/xymaa" target="_blank"><img src="img/vk.png" width="39px" height="39px"> </a>
+            <a href="https://t.me/xma9999" target="_blank"><img src="img/tg.png" width="38px" height="38px"> </a>
+        </div>
+    </footer>
+</html>
