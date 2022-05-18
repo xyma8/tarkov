@@ -276,7 +276,7 @@ function customsCVK(ex){
 				textE[i].textContent = "ЗБ-1012";
 				break;
 			case 8:
-				imgE[i].src = "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0c/ZB013_Grate.png/revision/latest/scale-to-width-down/1000?cb=20200727190316";
+				imgE[i].src = "img/exits/customs/zb013.png";
 				textE[i].textContent = "ЗБ-013";
 				break;
 			default: alert("error");
