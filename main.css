@@ -547,33 +547,4 @@ button[type="submit"]:hover{
     transform: scale(0.97);
 }
 
-.hello{
-    display: none;
-}
-
-.hello p{
-    font-size: 50;
-    color: var(--color-menu-text);
-    font-family: benderbold;
-}
-
-
-@media screen and (max-device-width: 600px) and (min-device-width: 100px){
-    .hello{
-        display: block;
-    }
-
-    .content{
-        display: none;
-    }
-
-    .formregcontainer{
-        display: none;
-    }
-
-    footer{
-        display: none;
-    }
-    
-}
 

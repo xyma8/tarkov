@@ -32,21 +32,21 @@
             <form class="myform" id="form">
 
                 <div class="element">
-                    <input type="text" name="username" id="name" oninput="checkName()" placeholder="Введите имя">
+                    <input type="text" name="username" id="name" oninput="checkName()" placeholder="Введите имя" autocomplete="off">
                     <span class="wz" title="От 3 символов, только буквы">?</span>
                 </div>
 
                 <div class="element">
-                    <input type="text" name="familia" id="familia" oninput="checkFamilia()" placeholder="Введите фамилию">
+                    <input type="text" name="familia" id="familia" oninput="checkFamilia()" placeholder="Введите фамилию" autocomplete="off">
                     <span class="wz" title="От 3 символов, только буквы">?</span>
                 </div>
 
                 <div class="element">
-                    <input type="text" name="phone" id="phone" oninput="checkPhone()" placeholder="Введите телефон">
+                    <input type="text" name="phone" id="phone" onfocusout="checkPhone()" placeholder="Введите телефон" autocomplete="off">
                 </div>
 
                 <div class="element">
-                    <input type="mail" name="mail" id="mail" oninput="checkEmail()" placeholder="Введите email">
+                    <input type="mail" name="mail" id="mail" oninput="checkEmail()" placeholder="Введите email" autocomplete="off">
                 </div>
 
                 <div class="element">
@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="element">
-                    <input type="text" name="login" id="login" oninput="checkLogin()" placeholder="Введите логин">
+                    <input type="text" name="login" id="login" oninput="checkLogin()" placeholder="Введите логин" autocomplete="off">
                     <span class="wz" title="От 5 до 8 символов">?</span>
                 </div>
 
@@ -65,131 +65,7 @@
                 <p><input name="pol" type="radio" value="j"> Женский</p>
                 <br>
                 <p>Выберите год рождения</p>
-                <select name="select" size="4" class="years" multiple>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option selected value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                    <option value="s1" class="year">1900</option>
-                </select>
+                <input type="date" name="calendar" id="calendar" value="2000-01-01" min="1899-01-01" oninput="checkDate()">
 
                 <br><br>
                 <button type="submit" name="okreg" id="okreg">Зарегистрироваться</button>
@@ -204,6 +80,7 @@
 
     <script>
         var showpass = false;
+        setMaxDate();
         $(function(){
             $("#phone").mask("+9(999) 999-9999");
         });
@@ -225,6 +102,17 @@
                 img.src = "img/show.png";
                 showpass=false;
             }
+        }
+
+        function setMaxDate() {
+            var calendar = document.getElementById("calendar");
+            var todayDate = new Date();
+            var year = todayDate.getFullYear();
+            var month = todayDate.getMonth()+1;
+            if(month<10) month = "0"+month;
+            var day = todayDate.getDate();
+            var s = ""+year+"-"+month+"-"+day;
+            calendar.max = s;
         }
 
         // function checkName() {

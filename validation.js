@@ -5,8 +5,9 @@ const phone = document.getElementById("phone");
 const email = document.getElementById("mail");
 const password = document.getElementById("password");
 const login = document.getElementById("login");
-var nameRigth = false; var familiaRigth = false; var phoneRigth = false; var emailRigth = false; passRigth = false; loginRigth = false;
-addyears()
+const calendar = document.getElementById("calendar");
+var nameRigth = false; var familiaRigth = false; var phoneRigth = false; var emailRigth = false; passRigth = false; loginRigth = false; dateRigth = false;
+//addyears()
 form.addEventListener('submit', (e)=> {
 	checkPhone();
 	checkEmail();
@@ -14,6 +15,7 @@ form.addEventListener('submit', (e)=> {
 	checkFamilia();
 	checkName();
 	checkLogin();
+	checkDate();
 	if(nameRigth&&familiaRigth&&emailRigth&&passRigth&&loginRigth&&phoneRigth) {
 		this.submit();
 	}else{
@@ -58,16 +60,16 @@ function passwordValidation(pass){
 
 
 
-function addyears(){
-	var god = 1900;
-	var v = 1;
-	var yearsspisok = document.getElementsByClassName("years");
-	var yearspisok = document.getElementsByClassName("year");
-	for(var i=0;i<yearspisok.length;i++) {
-		yearspisok[i].textContent = god++;
-		yearspisok[i].value="s"+v++;
-	}
-}
+// function addyears(){
+// 	var god = 1900;
+// 	var v = 1;
+// 	var yearsspisok = document.getElementsByClassName("years");
+// 	var yearspisok = document.getElementsByClassName("year");
+// 	for(var i=0;i<yearspisok.length;i++) {
+// 		yearspisok[i].textContent = god++;
+// 		yearspisok[i].value="s"+v++;
+// 	}
+// }
 
 
 
@@ -97,7 +99,7 @@ function checkFamilia() {
 function checkPhone() {
 	var phonevalue = phone.value;
 
-	if(phonevalue=="") {
+	if(phonevalue=='') {
 		phone.style.borderColor = "red";
 		phoneRigth = false;
 	}else{
@@ -139,5 +141,24 @@ function checkLogin() {
 	}else{
 		login.style.removeProperty('border');
 		loginRigth = true;
+	}
+}
+
+function checkDate() {
+	var datevalue = calendar.value;
+	// var todayDate = new Date();
+	// var year = todayDate.getFullYear();
+	// var month = todayDate.getMonth()+1;
+	// if(month<10) month = "0"+month;
+	// var day = todayDate.getDate();
+	// var s = ""+year+"-"+month+"-"+day;
+	// calendar.max = s;
+
+	if(datevalue==''||datevalue>calendar.max||datevalue<calendar.min) {
+		calendar.style.borderColor = "red";
+		dateRigth = false;
+	}else{
+		calendar.style.removeProperty('border');
+		dateRigth = true;
 	}
 }
